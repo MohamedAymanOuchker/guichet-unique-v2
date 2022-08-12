@@ -1,0 +1,50 @@
+.Line {
+  background-color: rgba(196, 196, 196, 0.11);
+}
+.listColor {
+  background-color: #242b59;
+  color: white;
+  min-height: 45vh;
+}
+.lightGreen {
+  color: #14948c;
+}
+.darkGreen {
+  color: #045257;
+}
+.white {
+  color: #ffffff;
+}
+.gray {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: "column";
+  height: 40px;
+}
+.Display {
+  display: flex;
+}
+.Position {
+  position: absolute;
+}
+.vl {
+  border-left: 1px solid gray;
+  height: 34px;
+}
+.fs {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #E6E6E6;
+}
+.ep {
+    padding-right: 0px;
+    padding-bottom: 18px;
+}
