@@ -16,24 +16,24 @@ export default function Search() {
     >
       <fieldset className={styles.fs}>
         <legend>Recherche</legend>
-        <TextField
-          id="outlined-helperText"
-          label="Label"
-          placeholder="Nom et prenom"
-        />
-        <TextField
-          id="outlined-helperText"
-          label="Label"
-          placeholder="Nom et prenom"
-        />
-        <TextField
-          id="outlined-helperText"
-          label="Label"
-          placeholder="Nom et prenom"
-        />
-        <Button variant="contained">
-          Rechercher
-        </Button>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <TextField
+            id="outlined-helperText"
+            label="Label"
+            placeholder="Nom et prenom"
+          />
+          <TextField
+            id="outlined-helperText"
+            label="Label"
+            placeholder="Nom et prenom"
+          />
+          <TextField
+            id="outlined-helperText"
+            label="Label"
+            placeholder="Nom et prenom"
+          />
+          <Button variant="contained">Rechercher</Button>
+        </div>
       </fieldset>
     </Box>
   );

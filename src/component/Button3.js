@@ -43,7 +43,7 @@ export default function Button3() {
           onClose={handleClose}
         >
           <MenuItem onClick={handleClose} disableRipple>
-            <Link to={"./ma-c"}>...</Link>
+            <Link to={"./"}>...</Link>
           </MenuItem>
           <MenuItem onClick={handleClose} disableRipple>
             <Link to={"./"}>...</Link>

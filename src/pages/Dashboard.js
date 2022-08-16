@@ -140,24 +140,22 @@ function DashboardContent() {
             overflow: "auto",
           }}
         >
+          <Paper
+            sx={{
+              p: 2,
+              display: "flex",
+              flexDirection: "column",
+              width: "1100px",
+              height: "100px",
+              backgroundColor: "#242b59",
+              color: '#fff',
+            }}
+          >
+            <Component1 />
+          </Paper>
           {/* <Toolbar /> */}
           <Container maxWidth="lg">
             <Grid container>
-              {/* Component1 */}
-              <Grid item xs={12}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    width: "1068px",
-                    height: "100px",
-                    // borderRadius: "34px",
-                  }}
-                >
-                  <Component1 />
-                </Paper>
-              </Grid>
               {/* Component2 */}
               <Grid item xs={12}>
                 <Paper
@@ -184,10 +182,10 @@ function DashboardContent() {
                     flexDirection: "column",
                     width: "1068px",
                     height: "1090px",
-                    // borderRadius: "34px",
                   }}
                 >
                   <Search />
+                  <br/>
                   <GridFragment />
                 </Paper>
               </Grid>

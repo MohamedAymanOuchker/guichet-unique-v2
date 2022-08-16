@@ -193,7 +193,7 @@ function MaContent() {
                     display: "flex",
                     flexDirection: "column",
                     width: "1068px",
-                    height: "1090px",
+                    height: "100%",
                     // borderRadius: "34px",
                   }}
                 >

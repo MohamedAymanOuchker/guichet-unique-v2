@@ -4,6 +4,15 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#242b59",
+    },
+  },
+});
 
 export default function Button1() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -18,15 +27,17 @@ export default function Button1() {
   return (
     <React.Fragment>
       <Stack spacing={2} direction="row">
-        {/* <Button size="small" variant="outlined">
+        <ThemeProvider theme={theme}>
+          {/* <Button size="small" variant="outlined">
           Nouvelle déclaration
         </Button>
         <Button size="small" variant="outlined">
           Nouvelle déclaration
         </Button> */}
-        <Button size="small" variant="contained" onClick={handleClick}>
-          Nouvelle déclaration
-        </Button>
+          <Button size="small" variant="contained" color="primary" onClick={handleClick}>
+            Nouvelle déclaration
+          </Button>
+        </ThemeProvider>
         <Menu
           id="demo-customized-menu"
           MenuListProps={{
